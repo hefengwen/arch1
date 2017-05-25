@@ -142,12 +142,17 @@
 			<version>${spring.security.version}</version>
 		</dependency>
 		<!-- Spring Security end -->
-		
+
 		<!-- 数据源 start -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
 			<version>1.0.29</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.2.8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -160,7 +165,7 @@
 			<version>6.0.6</version>
 		</dependency>
 		<!-- 数据源 end -->
-		
+
 		<!-- 日志 start -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
