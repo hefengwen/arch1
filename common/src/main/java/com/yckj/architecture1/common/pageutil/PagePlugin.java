@@ -60,14 +60,14 @@ public class PagePlugin implements Interceptor {
 					rs.close();
 					countStmt.close();
 
-					Page page = null;
+					Page<?> page = null;
 					if(parameterObject instanceof Page){	//参数就是Page实体
-						 page = (Page) parameterObject;
+						 page = (Page<?>) parameterObject;
 						page.setTotalCount(count);
 					}else{	//参数为某个实体，该实体拥有Page属性
 						Field pageField = ReflectHelper.getFieldByFieldName(parameterObject,"page");
 						if(pageField!=null){
-							page = (Page) ReflectHelper.getValueByFieldName(parameterObject,"page");
+							page = (Page<?>) ReflectHelper.getValueByFieldName(parameterObject,"page");
 							if(page==null)
 								page = new Page();
 							page.setTotalCount(count);
@@ -136,7 +136,7 @@ public class PagePlugin implements Interceptor {
 	 * @param page
 	 * @return
 	 */
-	private String generatePageSql(String sql,Page page){
+	private String generatePageSql(String sql,Page<?> page){
 		if(page!=null && dialect!=null && dialect.trim().length()>0){
 			StringBuffer pageSql = new StringBuffer();
 			if("mysql".equals(dialect)){
