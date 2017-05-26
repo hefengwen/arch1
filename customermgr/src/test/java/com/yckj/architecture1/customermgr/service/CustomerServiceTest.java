@@ -11,7 +11,18 @@ import com.yckj.architecture1.customermgr.vo.CustomerQueryModel;
 public class CustomerServiceTest  extends BaseTest{
 	@Autowired
 	private ICustomerService service;
-	
+	@Test
+	public void testCreate(){
+		
+		CustomerModel cm = new CustomerModel();
+		cm.setCustomerId("1");
+		cm.setPwd("c1");
+		cm.setRegisterTime("111");
+		cm.setShowName("c1");
+		cm.setTrueName("t1");
+		
+		service.create(cm);
+	}
 	@Test
 	public void testGetByConditionPage(){
 		Page<CustomerModel> list = service.getByConditionPage(new CustomerQueryModel());
