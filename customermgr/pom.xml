@@ -10,8 +10,10 @@
 	</parent>
 	<artifactId>customermgr</artifactId>
 	<packaging>war</packaging>
-	<name>customermgr Maven Webapp</name>
-	<url>http://maven.apache.org</url>
+	<name>customersmgr</name>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>com.yckj.architecture1</groupId>

@@ -10,8 +10,7 @@
 	</parent>
 	<artifactId>goosmgrweb</artifactId>
 	<packaging>war</packaging>
-	<name>goosmgrweb Maven Webapp</name>
-	<url>http://maven.apache.org</url>
+	<name>goosmgrweb</name>
 	<dependencies>
 		<dependency>
 			<groupId>com.yckj.architecture1</groupId>

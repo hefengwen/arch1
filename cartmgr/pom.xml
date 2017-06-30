@@ -10,8 +10,7 @@
 	</parent>
 	<artifactId>cartmgr</artifactId>
 	<packaging>war</packaging>
-	<name>cartmgr Maven Webapp</name>
-	<url>http://maven.apache.org</url>
+	<name>cartmgr</name>
 	<dependencies>
 		<dependency>
 			<groupId>com.yckj.architecture1</groupId>

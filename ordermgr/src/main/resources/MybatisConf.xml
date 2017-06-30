@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.yckj.architecture1.ordermgr.vo.OrderModel" alias="OM"/>
+		<typeAlias type="com.yckj.architecture1.ordermgr.vo.OrderQueryModel" alias="OQM"/>
+	</typeAliases>
+	<plugins>
+		<plugin interceptor="com.yckj.architecture1.common.pageutil.PagePlugin">
+			<property name="dialect" value="mysql"/>
+			<property name="pageSqlId" value=".*Page.*"/>
+		</plugin>
+	</plugins>
+</configuration>
