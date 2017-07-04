@@ -26,6 +26,8 @@ public class CustomerServiceTest  extends BaseTest{
 	@Test
 	public void testGetByConditionPage(){
 		Page<CustomerModel> list = service.getByConditionPage(new CustomerQueryModel());
-		System.out.println("list="+list);
+		System.out.println("list1="+list);
+		list = service.getByConditionPage(new CustomerQueryModel());
+		System.out.println("list2="+list);
 	} 
 }
