@@ -18,6 +18,7 @@
 		<module>goosmgrweb</module>
 		<module>ordermgr</module>
 		<module>storemgr</module>
+		<module>front</module>
 	</modules>
 
 	<properties>
