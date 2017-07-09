@@ -55,7 +55,7 @@ public class IndexController {
 	}
 	@RequestMapping(value="/toCart",method=RequestMethod.GET)
 	public String toCart(@CookieValue("MyLogin")String myLogin,Model model){
-		Integer customerUuid = Integer.parseInt(myLogin.split(",")[0]);
+		Integer customerUuid = Integer.parseInt(myLogin.split("#")[0]);
 		
 		CartQueryModel cqm = new CartQueryModel();
 		cqm.getPage().setPageShow(100);
@@ -67,7 +67,7 @@ public class IndexController {
 	@RequestMapping(value="/addToCart/{goodsUuid}",method=RequestMethod.GET)
 	public String addToCart(@PathVariable("goodsUuid")int goodsUuid,
 			@CookieValue("MyLogin")String myLogin,Model model){
-		Integer customerUuid = Integer.parseInt(myLogin.split(",")[0]);
+		Integer customerUuid = Integer.parseInt(myLogin.split("#")[0]);
 		CartModel cm = new CartModel();
 		cm.setBuyNum(1);
 		cm.setCustomerUuid(customerUuid);
@@ -83,7 +83,7 @@ public class IndexController {
 	}
 	@RequestMapping(value="/order",method=RequestMethod.GET)
 	public String order(@CookieValue("MyLogin")String myLogin){
-		Integer customerUuid = Integer.parseInt(myLogin.split(",")[0]);
+		Integer customerUuid = Integer.parseInt(myLogin.split("#")[0]);
 		CartQueryModel cqm = new CartQueryModel();
 		cqm.getPage().setPageShow(100);
 		cqm.setCustomerUuid(customerUuid);

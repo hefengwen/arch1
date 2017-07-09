@@ -38,19 +38,16 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>${servlet.api.version}</version>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
 			<version>${jsp.api.version}</version>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>${jstl.version}</version>
-			<scope>provided</scope>
 		</dependency>
 		<!-- Servlet API end -->
 		<!-- Spring核心容器 start -->
@@ -188,11 +185,11 @@
 			<artifactId>cglib</artifactId>
 			<version>3.2.5</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>asm</groupId>
 			<artifactId>asm</artifactId>
 			<version>3.3.1</version>
-		</dependency>
+		</dependency> -->
 		<!-- cglib end -->
 		
 		<!-- ehcache的jar -->

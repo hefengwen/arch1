@@ -18,7 +18,7 @@ import com.yckj.architecture1.customermgr.vo.CustomerModel;
 public class LoginController {
 	@Autowired
 	private CustomerService cs;
-	@RequestMapping(value="/",method=RequestMethod.GET)
+	@RequestMapping(value="/toLogin",method=RequestMethod.GET)
 	public String toLogin(){
 		return "login";
 	}
@@ -33,7 +33,7 @@ public class LoginController {
 		if(cm==null)
 			return "login";
 		
-		Cookie c = new Cookie("MyLogin",cm.getUuid()+","+System.currentTimeMillis());
+		Cookie c = new Cookie("MyLogin",cm.getUuid()+"#"+System.currentTimeMillis());
 		response.addCookie(c);
 		return "redirect:/toIndex";
 	}

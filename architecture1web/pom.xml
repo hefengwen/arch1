@@ -43,6 +43,12 @@
 			<version>0.0.1-SNAPSHOT</version>
 			<type>war</type>
 		</dependency>
+		<dependency>
+			<groupId>com.yckj.architecture1</groupId>
+			<artifactId>front</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>war</type>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>architecture1web</finalName>
@@ -72,6 +78,10 @@
 						<overlay>
 							<groupId>com.yckj.architecture1</groupId>
 							<artifactId>storemgr</artifactId>
+						</overlay>
+						<overlay>
+							<groupId>com.yckj.architecture1</groupId>
+							<artifactId>front</artifactId>
 						</overlay>
 					</overlays>
 				</configuration>
