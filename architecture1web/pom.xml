@@ -51,13 +51,14 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>architecture1web</finalName>
+		<finalName>arch1</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.1.0</version>
 				<configuration>
+					<packagingExcludes>WEB-INF/lib/*-SNAPSHOT-api.jar</packagingExcludes>
 					<overlays>
 						<overlay>
 							<groupId>com.yckj.architecture1</groupId>
