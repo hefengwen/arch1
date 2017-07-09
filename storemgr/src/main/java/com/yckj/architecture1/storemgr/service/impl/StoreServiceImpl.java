@@ -20,5 +20,9 @@ public class StoreServiceImpl extends BaseServiceImpl<StoreModel,StoreQueryModel
 		this.dao = dao;
 		super.setDao(dao);
 	}
+	@Override
+	public StoreModel getByGoodsUuid(int goodsUuid) {
+		return dao.getByGoodsUuid(goodsUuid);
+	}
 	
 }

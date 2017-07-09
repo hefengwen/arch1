@@ -36,4 +36,7 @@
 			</if>
 		</where>
 	</select>
+	<select id="getByCustomerId" parameterType="String" resultType="CM">
+		select * from tbl_customer where customerId=#{customerId}
+	</select>
 </mapper>

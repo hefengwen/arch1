@@ -10,7 +10,7 @@ import com.yckj.architecture1.customermgr.vo.CustomerQueryModel;
 
 public class CustomerServiceTest  extends BaseTest{
 	@Autowired
-	private ICustomerService service;
+	private CustomerService service;
 	@Test
 	public void testCreate(){
 		

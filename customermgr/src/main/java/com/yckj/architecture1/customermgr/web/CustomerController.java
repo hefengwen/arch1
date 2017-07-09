@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.yckj.architecture1.common.pageutil.Page;
 import com.yckj.architecture1.common.util.DateFormatHelper;
 import com.yckj.architecture1.common.util.JsonHelper;
-import com.yckj.architecture1.customermgr.service.ICustomerService;
+import com.yckj.architecture1.customermgr.service.CustomerService;
 import com.yckj.architecture1.customermgr.vo.CustomerModel;
 import com.yckj.architecture1.customermgr.vo.CustomerQueryModel;
 import com.yckj.architecture1.customermgr.web.vo.CustomerWebModel;
@@ -22,7 +22,7 @@ import com.yckj.architecture1.customermgr.web.vo.CustomerWebModel;
 @RequestMapping(value = "/customer")
 public class CustomerController {
 	@Autowired
-	private ICustomerService service;
+	private CustomerService service;
 	
 	@RequestMapping(value="/toAdd",method=RequestMethod.GET)
 	public String toAdd(){

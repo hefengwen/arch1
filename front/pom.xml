@@ -21,11 +21,15 @@
 			<groupId>com.yckj.architecture1</groupId>
 			<artifactId>cartmgr</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+			<type>jar</type>
+			<classifier>api</classifier>
 		</dependency>
 		<dependency>
 			<groupId>com.yckj.architecture1</groupId>
 			<artifactId>customermgr</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+			<type>jar</type>
+			<classifier>api</classifier>
 		</dependency>
 		<dependency>
 			<groupId>com.yckj.architecture1</groupId>
@@ -36,11 +40,15 @@
 			<groupId>com.yckj.architecture1</groupId>
 			<artifactId>ordermgr</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+			<type>jar</type>
+			<classifier>api</classifier>
 		</dependency>
 		<dependency>
 			<groupId>com.yckj.architecture1</groupId>
 			<artifactId>storemgr</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+			<type>jar</type>
+			<classifier>api</classifier>
 		</dependency>
 	</dependencies>
 	<build>

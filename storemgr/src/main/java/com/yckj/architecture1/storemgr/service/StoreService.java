@@ -6,6 +6,6 @@ import com.yckj.architecture1.storemgr.vo.StoreModel;
 import com.yckj.architecture1.storemgr.vo.StoreQueryModel;
 
 public interface StoreService extends BaseService<StoreModel,StoreQueryModel>{
-	
+	public StoreModel getByGoodsUuid(int goodsUuid);
 }
 

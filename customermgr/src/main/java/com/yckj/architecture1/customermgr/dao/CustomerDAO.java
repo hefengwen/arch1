@@ -8,5 +8,5 @@ import com.yckj.architecture1.customermgr.vo.CustomerQueryModel;
 @Repository
 public interface CustomerDAO extends BaseDAO<CustomerModel,CustomerQueryModel>{
 	
-	
+	CustomerModel getByCustomerId(String customerId);
 }
